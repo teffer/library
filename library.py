@@ -33,7 +33,6 @@ class Library():
         
     def _save_data(self) -> None:
         try:
-            raise Exception
             with open(self.data_file, "w", encoding="utf-8") as f:
                 json.dump([book.covert_to_dict() for book in self.books], f, indent=4, ensure_ascii=False)
                 print("Данные сохранены.")
