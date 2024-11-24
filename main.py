@@ -2,7 +2,6 @@ import os
 import sys
 import library as lb
 import book as bk
-import msvcrt
 
 def display_menu():
     print("""
